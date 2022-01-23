@@ -1,6 +1,5 @@
 let mouseCursor = document.querySelector('.cursor');
-// let img = document.querySelector('.img');
-let img = document.querySelector('.front-cover');
+let imgBlock = document.querySelector('.front-cover');
 let navLinks = document.querySelectorAll('.nav-links li');
 
 window.addEventListener('mousemove', cursor);
@@ -21,13 +20,9 @@ navLinks.forEach(link => {
   });
 });
 
-img.addEventListener('mousemove', () => {
+imgBlock.addEventListener('mousemove', () => {
   mouseCursor.classList.add('img-grow');
 });
-img.addEventListener('mouseleave', () => {
+imgBlock.addEventListener('mouseleave', () => {
   mouseCursor.classList.remove('img-grow');
-});
-
-img.addEventListener('click', () => {
-  console.log('click');
 });
