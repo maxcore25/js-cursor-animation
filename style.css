@@ -46,8 +46,15 @@ h1,
   transform: scale(2);
   background: #000;
 }
+.cursor.img-grow {
+  transform: scale(4);
+  border-color: red;
+}
 .hovered-link {
   color: #fff;
+}
+.front-cover {
+  width: fit-content;
 }
 .front-cover img {
   position: relative;
